@@ -190,19 +190,22 @@ align-items: center;
 
 
 
-.header-link{
-    font-family: var(--main-font);
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: var(--main-txt-cl)
-}
+.header-link {
+
+    font-family: var(--secondary-font);
+    font-style: normal;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--main-txt-cl)}
     
 
 
-.header-link-adress{
+/* .header-link-adress{
     font-family:var(--secondary-font);
     font-weight: 500;
     font-size: 14px;
@@ -211,7 +214,7 @@ align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--secondary-txt-cl);
-}
+} */
 
 
 .header-nav-adress>li.header-nav-adress-list{
