@@ -766,8 +766,7 @@ font-family:var(--secondary-font);
 
 .sociale-link-footer:hover,
 .sociale-link-footer:focus,
-.sociale-link-footer:active 
-{
+.sociale-link-footer:active{
     background-color: var(--accent-txt-cl);
     fill: var(--wight-txt-cl);
 }
@@ -851,6 +850,7 @@ transition: 250ms var(--cubiс-fix);
 .portfolio-items:nth-last-child(-n + 3) {
     margin-bottom: 0px;
 }
+
 
 
 .product-thumb{
