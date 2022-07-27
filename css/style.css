@@ -192,7 +192,6 @@ align-items: center;
 }
 
 
-
 .header-link {
 
     font-family: var(--secondary-font);
@@ -204,10 +203,14 @@ align-items: center;
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--main-txt-cl)}
+    transition: 250ms var(--cubiс-fix);
+    
+}
     
 
-
+.header-nav-adress-list{
+    color: var(--secondary-txt-cl);
+}
 
 
 .header-nav-adress>li.header-nav-adress-list{
@@ -235,7 +238,7 @@ color: var(--accent-txt-cl)
     border-radius: 2px;
     background-color: var(--accent-txt-cl);
     opacity: 1;
-    transition: opacity 5000ms var(--cubiс-fix);
+    
 }
 
 
@@ -309,9 +312,9 @@ color: var(--accent-txt-cl)
     width: 100%;
     height: 100%;
     background:var(--modai-bgc);
-
+    transition: 250ms var(--cubiс-fix); 
     opacity: 1;
-    transition: visibility 1 opacity 250ms var(--cubiс-fix);
+    transition: visibility 1 
    
 }
 
@@ -321,7 +324,7 @@ color: var(--accent-txt-cl)
 }
 
 .backdrop.is-hidden .modal{
-    transform:  opacity 250ms var(--cubiс-fix) scale(1.1)
+    transform:  opacity  scale(1.1)
 }
 
 .modal{
@@ -334,6 +337,7 @@ left: 50%;
 transform: translate(-50%, -50% ) ;
 min-width: 528px;
 min-height: 581px;
+transition: 250ms var(--cubiс-fix);
 
     background: #FFFFFF;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -459,14 +463,14 @@ padding-bottom: 24px;
 overflow: hidden;
 
 
-opacity: 0;
+opacity: 1;
 background: rgba(47, 48, 58, 0.8);
 transition: opacity 250ms var(--cubiс-fix);
 }
 
-.photo-list:hover .photo-list-actions{
+/* .photo-list:hover .photo-list-actions{
     opacity: 1;
-}
+} */
 
 .photo-text{
     font-family:var(--main-font);
@@ -537,8 +541,7 @@ transition: opacity 250ms var(--cubiс-fix);
     background-color: var(--wight-txt-cl);
     border-radius: 50%;
 
-    opacity: 1;
-    transform: opacity 250ms var(--cubiс-fix);
+     transition: 250ms var(--cubiс-fix);
 
 
 }
@@ -637,6 +640,7 @@ font-family:var(--secondary-font);
     gap: 30px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    transition: 250ms var(--cubiс-fix);
    
 
 }
@@ -745,6 +749,7 @@ font-family:var(--secondary-font);
     height: 44px;
     background-color:var(--color-svg-bg-footer) ;
     border-radius: 50%;
+    transition: 250ms var(--cubiс-fix);
 
 
 }
@@ -790,14 +795,12 @@ font-family: var(--secondary-font);
  line-height: 1.62;
  letter-spacing: 0.03em;
  color:var(--main-txt-cl);
-
+transition: 250ms var(--cubiс-fix);
     border-radius: 4px;
 
 }
 
-.portfolio-btn-action{
-    /* position: absolute; */
-}
+
 
 .portfolio-btn:hover,
 .portfolio-btn:focus,
