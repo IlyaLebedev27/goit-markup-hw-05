@@ -39,6 +39,9 @@ body {
 h1,h2,h3,h4,h5,h6,p{
     margin: 0px;
 }
+img{
+    display: block;
+}
 
 .link { 
 text-decoration: none;
@@ -867,12 +870,16 @@ font-family: var(--secondary-font);
 .product-actions{
     display: inline-block;
     position: absolute;
-    content: "";
+    padding-top: 63px;
+        padding-bottom: 63px;
+        padding-left: 24px;
+        padding-right: 24px;
+
     width: 100%;
     height: 100%;
     background-color: rgba(33, 150, 243, 0.9);
     
-    opacity: 0;
+    
     transform: translateY(100%);
     transition: transform 250ms var(--cubiс-fix);
 }
@@ -885,10 +892,7 @@ transform: translateY(0%);
 
 .product-text{
     font-family:var(--main-font);
-       padding-top:63px ;
-       padding-bottom:63px ;
-       padding-left: 24px;
-       padding-right: 24px;
+       
         font-weight: 400;
         font-size: 18px;
         line-height: 1.75;
