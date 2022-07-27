@@ -190,7 +190,15 @@ align-items: center;
 
 
 
-
+.header-link{
+    font-family: var(--main-font);
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: var(--main-txt-cl)
+}
     
 
 
@@ -309,13 +317,17 @@ color: var(--accent-txt-cl)
     background:var(--modai-bgc);
 
     opacity: 1;
-    transition: opacity 250ms var(--cubiс-fix);
+    transition: visibility 1 opacity 250ms var(--cubiс-fix);
    
 }
 
 .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
+}
+
+.backdrop.is-hidden .modal{
+    transform:  opacity 250ms var(--cubiс-fix) scale(1.1)
 }
 
 .modal{
@@ -325,7 +337,7 @@ color: var(--accent-txt-cl)
 position: absolute;
 top: 50%;
 left: 50%;
-transform: translate(-50%, -50% );
+transform: translate(-50%, -50% ) ;
 min-width: 528px;
 min-height: 581px;
 
@@ -334,13 +346,14 @@ min-height: 581px;
         border-radius: 4px;
 }
 
-.svg-close{
-    
+
+.modal-btm{
     width: 30px;
     height: 30px;
-    background-color: #FFFFFF;
+    margin-top: 8px;
+    margin-right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-
 }
 
 
@@ -514,12 +527,14 @@ transition: opacity 250ms var(--cubiс-fix);
     /* margin-bottom: 20px; */
 
 .sociale{
+    
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 .sociale-link{
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -528,10 +543,15 @@ transition: opacity 250ms var(--cubiс-fix);
     background-color: var(--wight-txt-cl);
     border-radius: 50%;
 
+    opacity: 1;
+    transform: opacity 250ms var(--cubiс-fix);
+
 
 }
     
-    
+   .sociale-link-list{
+    position: relative;
+   }
 
 
 .svg-links{
@@ -543,8 +563,10 @@ transition: opacity 250ms var(--cubiс-fix);
 .sociale-link:focus,
 .sociale-link:active
 {
+    
     background-color: var(--accent-txt-cl);
     fill: var(--wight-txt-cl);
+    transform: opacity 250ms var(--cubiс-fix);
 }
 
 .sociale-link:hover,
