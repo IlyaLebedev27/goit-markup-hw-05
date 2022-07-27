@@ -314,7 +314,9 @@ color: var(--accent-txt-cl)
     background:var(--modai-bgc);
     transition: 250ms var(--cubiс-fix); 
     opacity: 1;
-    transition: visibility 1 
+    transition: visibility 1;
+    z-index: 9;
+    
    
 }
 
